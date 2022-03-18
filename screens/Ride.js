@@ -156,7 +156,7 @@ export default class RideScreen extends Component {
         } else {
             bikeRef.docs.map(doc => {
                 if (!doc.data().under_maintenance) {
-                    //si la bicicleta está dipsonible, entonces la transacción será rentada, sino será regresae
+                    //si la bicicleta está dipsonible, entonces la transacción será rentada, sino será regresar
 
                     transactionType = doc.data().is_bike_available ?
                         "rented" : "return";
